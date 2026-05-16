@@ -21,6 +21,39 @@
   --transition: 200ms ease;
 }
 
+@media (max-width: 768px) {
+  /* Di HP, buat layout jadi satu kolom */
+  .container {
+    padding: 15px; /* Kurangi padding samping */
+  }
+
+  /* Elemen yang tadinya berjejer (Flexbox), dibuat vertikal */
+  .main-content {
+    flex-direction: column; 
+    gap: 20px;
+  }
+
+  /* Tombol-tombol di atas yang tadi kita geser ke kiri/kanan */
+  .top-nav-actions {
+    position: static; /* Lepas dari 'absolute' agar tidak menabrak judul */
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  /* Buat card atau form memenuhi lebar layar */
+  .card, .expense-form {
+    width: 100%;
+    margin: 0;
+  }
+
+  /* Perbesar ukuran tombol agar mudah ditekan jempol (Touch-friendly) */
+  button {
+    min-height: 44px;
+    width: 100%; /* Tombol submit biasanya lebih bagus full width di HP */
+  }
+}
+
 /* ============================================================
    Dark Mode Tokens
    ============================================================ */
