@@ -38,7 +38,7 @@
     position: static; /* Lepas dari 'absolute' agar tidak menabrak judul */
     justify-content: center;
     margin-bottom: 20px;
-    width: 100%;
+    width: 20%;
   }
 
   /* Buat card atau form memenuhi lebar layar */
